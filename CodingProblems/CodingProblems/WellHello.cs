@@ -9,7 +9,7 @@ namespace CodingProblems
         public static string Reverse(this string str)
         {
             char[] chars = str.ToCharArray();
-            Array.Reverse(chars);
+            WellHello.Reverse(chars);
             return new string(chars);
         }
     }

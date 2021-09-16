@@ -12,7 +12,7 @@ namespace CodingProblems_tests
         public static string Reverse(this string str)
         {
             char[] chars = str.ToCharArray();
-            Array.Reverse(chars);
+            WellHello_tests.Reverse(chars);
             return new string(chars);
         }
     }
