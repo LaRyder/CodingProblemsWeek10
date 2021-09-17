@@ -4,17 +4,16 @@ using System.Text;
 
 namespace CodingProblems
 {
-    public class WellHello
+    public class ExampleTwo
     {
-        public string Reverse(string str)
+        public string Letter(string str)
         {
             var sb = new StringBuilder();
 
-            for (var i = str.Length - 1; i >= 0; i--)
+            for (var i = str.Length - 0; i == 0;) 
             {
-                sb.Append(str[i]);
+                sb.Equals(str);
             }
-
             return sb.ToString();
         }
     }

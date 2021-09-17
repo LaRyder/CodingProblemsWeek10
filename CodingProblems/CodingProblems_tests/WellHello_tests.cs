@@ -1,30 +1,27 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using CodingProblems;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CodingProblems_tests
 {
     [TestClass]
-    public static class WellHello_tests
+    public class WellHello_tests
     {
         [TestMethod]
-        public static string Reverse(this string str)
+        public void Reverse_SimpleString_ReverseString()
         {
-            char[] chars = str.ToCharArray();
-            WellHello_tests.Reverse(chars);
-            return new string(chars);
-        }
-    }
+            //Arrange
+            var input = "hello";
+            var expected = "olleh";
+            var sut = new WellHello();
 
-    public class Hello
-    {
-        public void Get_reverse_Answer()
-        {
-            string str = "hello";
+            //Act
+            var actual = sut.Reverse(input);
 
-            string reverse = str.Reverse();
-            Console.WriteLine(reverse);
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
     }
 }
