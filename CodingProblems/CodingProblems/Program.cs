@@ -6,7 +6,7 @@ namespace Warm_up_loops
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("H!");
         }
     }
 }
